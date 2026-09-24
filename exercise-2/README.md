@@ -1,0 +1,4 @@
+- O script grava em três coleções no DB `cartola_fc_db`:
+  - `clubes_rodada_atual` (upsert por `_id`)
+  - `atletas_rodada_atual` (limpa e insere a coleta atual)
+  - `mercado_rodada_atual` (mantém somente o registro mais recente)
