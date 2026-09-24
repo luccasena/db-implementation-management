@@ -20,7 +20,10 @@ class MongoDBClient:
     def criar_colecao(self, nome_colecao: str) -> Collection:
         return self.db[nome_colecao]
 
-    def salvar_na_colecao(self, nome_colecao: str, dados: list[dict], chaves_unicas: list[str]):
+    def remover_colecao(self, nome_colecao: str):
+        self.criar_colecao(nome_colecao).delete_many({})
+
+    def salvar_na_colecao_com_update_one(self, nome_colecao: str, dados: list[dict], chaves_unicas: list[str]):
         colecao = self.criar_colecao(nome_colecao)
 
         for documento in dados:
@@ -34,6 +37,11 @@ class MongoDBClient:
                 {"$set": documento},
                 upsert=True,
             )
+
+    def salvar_na_colecao_mais_atual(self, nome_colecao: str, dados: list[dict]):
+        self.remover_colecao(nome_colecao)
+        self.criar_colecao(nome_colecao).insert_many(dados)
+
 
 class CartolaClient:
     def __init__(self):
