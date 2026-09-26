@@ -13,6 +13,12 @@ O `OpenF1 Data Explorer` oferece uma interface gráfica que traduz seleções do
 
 A aplicação apenas lê dados existentes na base — a ingestão continua sendo responsabilidade do coletor do [Exercício 01](../exercise-1).
 
+## Imagens da Aplicação
+
+<img src="src/public/dashboard-1.png"></img>
+<img src="src/public/dashboard-2.png"></img>
+<img src="src/public/dashboard-3.png"></img>
+
 ## Tecnologias
 
 - Python 3
