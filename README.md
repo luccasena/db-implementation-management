@@ -18,10 +18,13 @@ Implementa um processo de ETL para consultar dados de mercado, atletas e clubes 
 
 Coleta dados públicos de Unidades Básicas de Saúde, trata latitude e longitude, transforma os registros em Features GeoJSON e cria um índice geoespacial `2dsphere` no MongoDB.
 
-
 ### [Exercício 04 -  OpenF1 Data Explorer](exercise-4/README.md)
 
 Aplicação web em Streamlit para explorar, validar e comparar os dados de sessões, pilotos e voltas da Fórmula 1 coletados pelo [Exercício 01](../exercise-1) e armazenados no MongoDB (`openf1_data`).
+
+### [Exercício 05 - Introdução ao Redis](exercise-5/README.md)
+
+Lista de exercícios introdutória sobre o Redis, abordando seus principais tipos de dados, comandos e recursos em cenários como sessões, contadores, filas, objetos de usuários, rankings e notificações.
 
 ## Tecnologias principais
 
@@ -31,3 +34,4 @@ Aplicação web em Streamlit para explorar, validar e comparar os dados de sess�
 - `requests`
 - `pymongo`
 - `python-dotenv`
+- Redis
