@@ -1,0 +1,14 @@
+[theme]
+base = "dark"
+primaryColor = "#E10600"
+backgroundColor = "#15151E"
+secondaryBackgroundColor = "#1F1F2B"
+textColor = "#F5F5F7"
+borderColor = "#2E2E3C"
+baseRadius = "small"
+font = "Titillium Web:https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap"
+codeFont = "JetBrains Mono:https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap"
+
+[theme.sidebar]
+backgroundColor = "#101018"
+secondaryBackgroundColor = "#1F1F2B"

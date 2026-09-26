@@ -18,6 +18,11 @@ Implementa um processo de ETL para consultar dados de mercado, atletas e clubes 
 
 Coleta dados públicos de Unidades Básicas de Saúde, trata latitude e longitude, transforma os registros em Features GeoJSON e cria um índice geoespacial `2dsphere` no MongoDB.
 
+
+### [Exercício 04 -  OpenF1 Data Explorer](exercise-4/README.md)
+
+Aplicação web em Streamlit para explorar, validar e comparar os dados de sessões, pilotos e voltas da Fórmula 1 coletados pelo [Exercício 01](../exercise-1) e armazenados no MongoDB (`openf1_data`).
+
 ## Tecnologias principais
 
 - Python
